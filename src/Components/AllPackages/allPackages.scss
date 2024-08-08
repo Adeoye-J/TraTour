@@ -1,0 +1,50 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --yellow-hover: hsl(47, 88%, 44%);
+    --white: hsl(0, 0%, 100%);
+    --gray500: hsl(0, 0%, 42%);
+    --gray950: hsl(0, 0%, 7%);
+}
+
+
+.allpackages-container {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 5px;
+        color: var(--yellow);
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        text-align: center;
+        margin-block: .7rem;
+        font-weight: bold;
+    }
+
+    .packages-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .packages-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .packages-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

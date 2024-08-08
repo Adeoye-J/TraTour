@@ -1,0 +1,81 @@
+:root {
+  --yellow-hover: hsl(47, 88%, 44%);
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray500: hsl(0, 0%, 42%);
+  --gray950: hsl(0, 0%, 7%);
+}
+
+.services-container {
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.services-container h2 {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--yellow);
+  font-weight: bold;
+}
+.services-container h1 {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-block: 0.7rem;
+  font-weight: bold;
+}
+.services-container .services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.services-container .services-content .service {
+  border: 2px solid var(--yellow);
+  padding: 2rem 1.4rem;
+  min-width: 270px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.services-container .services-content .service .logo {
+  border: 2px solid var(--yellow);
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.services-container .services-content .service .logo .icon {
+  color: var(--yellow);
+}
+.services-container .services-content .service .logo:hover {
+  background-color: var(--yellow);
+}
+.services-container .services-content .service .logo:hover .icon {
+  color: var(--white);
+}
+.services-container .services-content .service h1 {
+  padding-top: 1rem;
+}
+.services-container .services-content .service p {
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .services-container .services-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .services-container .services-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=services.css.map */
