@@ -60,7 +60,7 @@ const BookingForm = () => {
               onChange={handleChange}
             />
           </div>
-          <button type="submit" onClick={handleBooking}>Make Bookings</button>
+          <button type="submit">Make Bookings</button>
         </form>
       </div>
     </>
