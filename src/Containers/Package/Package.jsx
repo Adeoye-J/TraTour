@@ -57,7 +57,7 @@ const Package = ({data}) => {
 
                 <div className="action-container">
                     <Link to={`/packages/${data.id}`}><button className='view' onClick={() => setId(data.id)}>View Details</button></Link>
-                    <Link><button className='book' onClick={() => setId(data.id)}>Book Now</button></Link>
+                    <Link to={"/bookingform"}><button className='book' onClick={() => setId(data.id)}>Book Now</button></Link>
                 </div>
 
             </div>

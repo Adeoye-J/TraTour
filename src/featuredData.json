@@ -1,0 +1,93 @@
+[
+    {
+        "id": 6,
+        "image": "/images/package-6.jpg",
+        "location": "Brazil",
+        "duration": "5 days",
+        "persons": "2 Person",
+        "title": "Rio de Janeiro Carnival",
+        "rating": 4.5,
+        "numberOfRatings": 350,
+        "amount": 1000,
+        "pecks": "VIP access to carnival events",
+        "otherDetails": "Enjoy samba shows and street parades"
+    },
+    {
+        "id": 7,
+        "image": "/images/package-7.jpg",
+        "location": "Kenya",
+        "duration": "8 days",
+        "persons": "1 Person",
+        "title": "Safari Adventure",
+        "rating": 4.8,
+        "numberOfRatings": 400,
+        "amount": 2000,
+        "pecks": "All-inclusive safari",
+        "otherDetails": "Experience wildlife up close with expert guides"
+    },
+    {
+        "id": 8,
+        "image": "/images/package-8.jpg",
+        "location": "Canada",
+        "duration": "7 days",
+        "persons": "2 Person",
+        "title": "Rocky Mountain Explorer",
+        "rating": 4.7,
+        "numberOfRatings": 290,
+        "amount": 1300,
+        "pecks": "Mountain hiking and skiing",
+        "otherDetails": "Stay in cozy mountain lodges"
+    },
+    {
+        "id": 9,
+        "image": "/images/package-9.jpg",
+        "location": "South Africa",
+        "duration": "6 days",
+        "persons": "3 Person",
+        "title": "Cape Town and Winelands",
+        "rating": 4.6,
+        "numberOfRatings": 240,
+        "amount": 900,
+        "pecks": "Private vineyard tours",
+        "otherDetails": "Explore Cape Town's scenic beauty and rich history"
+    },
+    {
+        "id": 10,
+        "image": "/images/package-10.jpg",
+        "location": "Egypt",
+        "duration": "5 days",
+        "persons": "4 Person",
+        "title": "Pyramids and Nile Cruise",
+        "rating": 4.9,
+        "numberOfRatings": 480,
+        "amount": 1400,
+        "pecks": "Guided pyramid tours",
+        "otherDetails": "Sail down the Nile in luxury"
+    },
+    {
+        "id": 11,
+        "image": "/images/package-11.jpg",
+        "location": "Greece",
+        "duration": "7 days",
+        "persons": "2 Person",
+        "title": "Greek Islands Odyssey",
+        "rating": 4.7,
+        "numberOfRatings": 320,
+        "amount": 1100,
+        "pecks": "Island hopping with private yacht",
+        "otherDetails": "Experience the charm of Mykonos and Santorini"
+    },
+    {
+        "id": 12,
+        "image": "/images/package-12.jpg",
+        "location": "Spain",
+        "duration": "4 days",
+        "persons": "1 Person",
+        "title": "Barcelona City Break",
+        "rating": 4.6,
+        "numberOfRatings": 200,
+        "amount": 700,
+        "pecks": "Free access to museums",
+        "otherDetails": "Discover Gaudi's architecture and vibrant nightlife"
+    }
+]

@@ -15,18 +15,19 @@ const Favorites = () => {
             
             <h2>Favorites</h2>
             <h1>Explore Favorites</h1>
-
-            <div className="wishlist-content">
-                {
-                    wishlist.length > 0 ? (
-                        wishlist.map((wishItem) => (
+            {
+                wishlist.length > 0 ? (
+                    <div className="wishlist-content">
+                        {wishlist.map((wishItem) => (
                             <Package data={wishItem} />
-                        ))
+                        ))}
+                    </div>
                     ) : (
                         <h1>No Favorites here. Add to view.</h1>
                     )
-                }
-            </div>
+                
+            
+            }
         </div>
     </>
   )

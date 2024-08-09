@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import {Link} from "react-router-dom"
 import "./packageDetails.css"
 import { TourContext } from '../../TourContext/TourContext';
 import Hero from '../../Components/Home/Hero/Hero';
@@ -22,17 +23,43 @@ const PackageDetails = () => {
                             </div>
                             <div className="more-details">
                                 <h1>{chosenPackage.title}</h1>  
-                                <p>Location: <span>{chosenPackage.location}</span></p>
-                                <p>Price: <span>${chosenPackage.amount}</span></p>
-                                <p>Duration: <span>{chosenPackage.duration}</span></p>
-                                <p>Persons: <span>{chosenPackage.persons}</span></p>
-                                <p>Ratings: <span>{chosenPackage.persons}</span></p>
-                                <p>No Of Ratings: <span>{chosenPackage.persons}</span></p>
-                                <div className="additionals">
-                                    <p>Pecks: <span>{chosenPackage.pecks}</span></p>
-                                    <p>Other Details: <span>{chosenPackage.otherDetails}</span></p>
-                                </div>
-                                <button className="">Book Now</button>
+                                <table border={1}>
+                                    <tr>
+                                        <td>Location</td>
+                                        <td>{chosenPackage.location}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Price</td>
+                                        <td>${chosenPackage.amount}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Duration</td>
+                                        <td>{chosenPackage.duration}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Persons</td>
+                                        <td>{chosenPackage.persons}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>No Of Ratings</td>
+                                        <td>{chosenPackage.rating}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>No Of Ratings</td>
+                                        <td>{chosenPackage.numberOfRatings}</td>
+                                    </tr>
+                                </table>
+                                <table border={1}>
+                                    <tr>
+                                        <td>Pecks</td>
+                                        <td>{chosenPackage.pecks}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other Details</td>
+                                        <td>{chosenPackage.otherDetails}</td>
+                                    </tr>
+                                </table>
+                                <Link to={"/bookingform"}><button>Book Now</button></Link>
                             </div>
                         </div>
                     ))

@@ -4,6 +4,7 @@ import { CgMenuGridO } from "react-icons/cg";
 import { MdCloseFullscreen } from "react-icons/md";
 
 import "./navbar.css"
+// import { LiaAnkhSolid } from 'react-icons/lia';
 
 const Menu = () => {
 
@@ -16,13 +17,13 @@ const Menu = () => {
         <Link to={"/about"} className='menu'>About</Link>
       </li>
       <li>
-        <Link to={"/contact"} className='menu'>Contact</Link>
-      </li>
-      <li>
         <Link to={"/favorites"} className='menu'>Favorites</Link>
       </li>
       <li>
         <Link to={"/allpackages"} className='menu'>All Packages</Link>
+      </li>
+      <li>
+        <Link to={"/bookings"} className='menu'>Bookings</Link>
       </li>
     </>
   )
