@@ -5,6 +5,7 @@ import SearchBar from "../../Containers/SearchBar/SearchBar"
 import Featured from "./Featured/Featured"
 import Services from './Services/Services'
 import Destination from '../../Containers/Destination/Destination'
+import Testimonials from "./Testimonials/Testimonials"
 // import { TourContext } from '../../TourContext/TourContext'
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <Destination />
         <Featured />
         <Services />
+        <Testimonials />
     </div>
   )
 }

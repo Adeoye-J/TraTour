@@ -32,6 +32,7 @@ function App() {
           <Route path="/bookings" element={<Bookings />} />
         </Routes>
       </TourProvider>
+      <Footer />
       {/* <Footer /> */}
     </>
   )
