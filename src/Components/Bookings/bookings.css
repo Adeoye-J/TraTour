@@ -72,12 +72,12 @@
   color: var(--yellow);
 }
 @media screen and (max-width: 1000px) {
-  .bookings-container .booking-content {
+  .bookings-container .bookings-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 600px) {
-  .bookings-container .booking-content {
+  .bookings-container .bookings-content {
     grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=bookings.css.map */
