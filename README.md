@@ -41,7 +41,7 @@ To introduce front-end web development using React.js and build a functional tra
 
 3. Start the development server:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Project Structure
