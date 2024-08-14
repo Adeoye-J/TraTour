@@ -5,9 +5,9 @@ import Hero from '../Home/Hero/Hero'
 
 const Bookings = () => {
 
-  const {id, bookings, setBookings} = useContext(TourContext)
+  const {bookings, setBookings} = useContext(TourContext)
 
-  const handleRemove = () => {
+  const handleRemove = (id) => {
     const remainingBookings = bookings.filter((eachBooking) => eachBooking.id !== id)
     setBookings(remainingBookings)
   }
@@ -32,7 +32,7 @@ const Bookings = () => {
                 <p>Cost: ${booking.amount}</p>
               </div>
               <div className="delete-booking">
-                <button onClick={handleRemove}>Remove Booking</button>
+                <button onClick={() => handleRemove(booking.id)}>Remove Booking</button>
               </div>
             </div>
           ))} 
