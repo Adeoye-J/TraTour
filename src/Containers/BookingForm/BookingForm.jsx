@@ -4,7 +4,7 @@ import { TourContext } from '../../TourContext/TourContext';
 import Hero from "../../Components/Home/Hero/Hero"
 
 const BookingForm = () => {
-  const {userDetails, setUserDetails} = useContext(TourContext);
+  const {userDetails, setUserDetails, bookings, setBookings, id, allData} = useContext(TourContext);
 
   const handleChange = (e) => {
     setUserDetails({
@@ -15,16 +15,28 @@ const BookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // onBook(userDetails);
-    alert("Bookings made for ")
+    allData.map((chosenPackage) =>
+      (chosenPackage.id === id && setBookings([...bookings, chosenPackage])))
+    alert("Bookings Successful")
   };
 
+  
 
   return (
     <>
       <Hero title="Booking Form" />
       <div className="bookingform-container">
         <h2>Booking Form</h2>
+        {
+          allData.map((chosenPackage) => (chosenPackage.id === id && 
+            <div className='booked-package'>
+              <div className="image">
+                <img src={chosenPackage.image} alt={chosenPackage.title} />
+              </div>
+              <h1>{chosenPackage.title}</h1>
+            </div>
+          ))
+        }
         <h1>Fill the form below to book selected package.</h1>
         <form onSubmit={handleSubmit} className='bookingform-content'>
           <div className="form-group">

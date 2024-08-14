@@ -1,0 +1,252 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --yellow-hover: hsl(47, 88%, 44%);
+    --white: hsl(0, 0%, 100%);
+    --gray500: hsl(0, 0%, 42%);
+    --gray950: hsl(0, 0%, 7%);
+}
+
+.footer-container {
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+
+    
+    
+    .footer-content {
+        margin-block: 3rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        
+
+        .footer-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h1 {
+                font-size: 2.2rem;
+                text-transform: uppercase;
+
+                span {
+                    color: blue;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+
+            .social-links {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                .links {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 2px solid blue;
+                        cursor: pointer;
+
+                        .icon {
+                            color: blue;
+                        }
+
+                        &:hover {
+                            border: 2px solid var(--white);
+
+                            .icon {
+                                color: var(--white)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-services {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            // align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                // text-align: center;
+            }
+
+            .service {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                
+                
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        padding-bottom: .3rem;
+                        border-bottom: 2px solid var(--white);
+                    }
+                }
+            }
+        }
+
+        .footer-useful-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            // align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                // text-align: center;
+            }
+
+            .service {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    transition: all ease .7s;
+
+                    &:hover {
+                        padding-bottom: .3rem;
+                        border-bottom: 2px solid var(--white);
+                    }
+                }
+            }
+        }
+
+        .contact-us {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .contact-details {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: .8rem;
+                }
+            }
+
+            .newsletter {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                .input-button {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        padding-left: 10px;
+                        padding-right: 5px;
+                        font-size: 1rem;
+                        outline: none;
+                        border-radius: 10px;
+                        border: none;
+                    }
+
+                    button {
+                        height: 40px;
+                        padding-inline: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-wrap: nowrap;
+                        border: 2px solid var(--white);
+
+                        &:hover {
+                            color: var(--yellow);
+                            background-color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .footer-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    @media screen and (max-width: 500px) {
+        .footer-content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+
+            .footer-info {
+
+                h1 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .footer-services {
+                align-items: center;
+            }
+
+            .footer-useful-links {
+                align-items: center;
+            }
+        }
+    }
+
+}
+

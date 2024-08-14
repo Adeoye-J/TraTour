@@ -17,14 +17,14 @@ const SearchBar = () => {
             <label htmlFor="duration">Duration: </label>
             <input type="text" id='duration' placeholder='Duration' />
           </div>
-          <div className="search-content">
+          {/* <div className="search-content">
             <label htmlFor="departure">Departure Date: </label>
             <input type="" id='departure' placeholder='Depart Date' />
           </div>
           <div className="search-content">
             <label htmlFor="arrival">Arrival Date: </label>
             <input type="text" id='arrival' placeholder='Return Date' />
-          </div>
+          </div> */}
           {/* <div className="submit">
             <button onClick={handleSubmit}>Submit</button>
           </div> */}

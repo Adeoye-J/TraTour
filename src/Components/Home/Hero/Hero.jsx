@@ -14,7 +14,7 @@ const Hero = () => {
     },
     {
       id: 2,
-      image: "/images/package-3.jpg",
+      image: "/images/package-4.jpg",
       title: "Tours & Travel",
       text: "Let's Discover The World Together"
     },

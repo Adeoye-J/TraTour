@@ -38,6 +38,8 @@
                 font-weight: bold;
                 outline: none;
                 height: 50px;
+                border-radius: 10px;
+                border: 1px solid;
 
                 &::placeholder {
                     color: var(--gray500);

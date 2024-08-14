@@ -14,16 +14,16 @@ const Footer = () => {
             <h2>Follow Us</h2>
             <div className="links">
               <div className="link">
-                <FaTwitter />
+                <FaTwitter size={20} className='icon' />
               </div>
               <div className="link">
-                <FaFacebook />
+                <FaFacebook size={20} className='icon' />
               </div>
               <div className="link">
-                <FaLinkedin />
+                <FaLinkedin size={20} className='icon' />
               </div>
               <div className="link">
-                <FaInstagram />
+                <FaInstagram size={20} className='icon' />
               </div>
             </div>
           </div>
@@ -32,35 +32,35 @@ const Footer = () => {
         <div className="footer-services">
           <h2>Our Services</h2>
           <ul className="service">
-            <li><span><FaArrowRight /></span> About</li>
-            <li><span><FaArrowRight /></span> Destination</li>
-            <li><span><FaArrowRight /></span> Services</li>
-            <li><span><FaArrowRight /></span> Packages</li>
-            <li><span><FaArrowRight /></span> Guides</li>
-            <li><span><FaArrowRight /></span> Testimonial</li>
-            <li><span><FaArrowRight /></span> Blog</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> About</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Destination</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Services</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Packages</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Guides</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Testimonial</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Blog</li>
           </ul>
         </div>
 
-        <div className="footer-usefull-links">
-          <h2>Our Services</h2>
+        <div className="footer-useful-links">
+          <h2>Useful Links</h2>
           <ul className="service">
-            <li><span><FaArrowRight /></span> About</li>
-            <li><span><FaArrowRight /></span> Destination</li>
-            <li><span><FaArrowRight /></span> Services</li>
-            <li><span><FaArrowRight /></span> Packages</li>
-            <li><span><FaArrowRight /></span> Guides</li>
-            <li><span><FaArrowRight /></span> Testimonial</li>
-            <li><span><FaArrowRight /></span> Blog</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> About</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Destination</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Services</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Packages</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Guides</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Testimonial</li>
+            <li><span><FaArrowRight size={10} color='blue' /></span> Blog</li>
           </ul>
         </div>
 
         <div className="contact-us">
           <h2>Contact Us</h2>
           <div className="contact-details">
-            <p><span><FaLocationArrow /></span> 123 Street, New York, USA</p>
-            <p><span><FaPhone /></span> +012 345 67890</p>
-            <p><span><FaMailBulk /></span> info@example.com</p>
+            <p><span><FaLocationArrow size={10} color='blue' /></span> 123 Street, New York, USA</p>
+            <p><span><FaPhone size={10} color='blue' /></span> +012 345 67890</p>
+            <p><span><FaMailBulk size={10} color='blue' /></span> info@example.com</p>
           </div>
           <div className="newsletter">
             <h2>Newsletter</h2>

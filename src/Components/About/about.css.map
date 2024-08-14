@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"about.css"}
+{"version":3,"sources":["about.scss","about.css"],"names":[],"mappings":"AAAA;EACI,2BAAA;EACA,iCAAA;EACA,yBAAA;EACA,0BAAA;EACA,yBAAA;ACCJ;;ADII;EACI,iBAAA;EACA,kBAAA;EACA,kBAAA;ACDR","file":"about.css"}

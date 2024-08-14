@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/allpackages" element={<AllPackages />} />
           <Route path="/packages/:id" element={<PackageDetails/>} />
@@ -33,7 +33,6 @@ function App() {
         </Routes>
       </TourProvider>
       <Footer />
-      {/* <Footer /> */}
     </>
   )
 }

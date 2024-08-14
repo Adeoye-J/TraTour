@@ -1,11 +1,15 @@
 import React from 'react'
+import Hero from '../Home/Hero/Hero'
 import "./about.css"
 
 const About = () => {
   return (
-    <div>
-      About
-    </div>
+    <>
+      <Hero/>
+      <div className='about-container'>
+        <h1>About Us</h1>
+      </div>
+    </>
   )
 }
 
