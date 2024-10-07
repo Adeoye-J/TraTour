@@ -24,6 +24,7 @@
 .bookingform-container .booked-package {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 .bookingform-container .booked-package .image {
