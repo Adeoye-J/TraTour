@@ -15,7 +15,7 @@
     background: transparent;
     z-index: 50;
 
-    background-color: #00000094;
+    background-color: #000000d7;
     border-bottom: 1px solid #000;
 
     .logo {
@@ -41,6 +41,11 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+
+            .login {
+                background: none;
+                color: var(--gray950);
+            }
 
             button {
                 cursor: pointer;

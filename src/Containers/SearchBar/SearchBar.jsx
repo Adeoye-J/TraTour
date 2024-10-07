@@ -11,12 +11,12 @@ const SearchBar = () => {
         <div className="search-container">
           <div className="search-content">
             <label htmlFor="destination">Destination: </label>
-            <input type="text" id='destination' placeholder='Destination' value={destination} onChange={(e) => setDestination(e.target.value)} />
+            <input type="text" id='destination' placeholder='Search Destination or Trip...' value={destination} onChange={(e) => setDestination(e.target.value)} />
           </div>
-          <div className="search-content">
+          {/* <div className="search-content">
             <label htmlFor="duration">Duration: </label>
             <input type="text" id='duration' placeholder='Duration' />
-          </div>
+          </div> */}
           {/* <div className="search-content">
             <label htmlFor="departure">Departure Date: </label>
             <input type="" id='departure' placeholder='Depart Date' />

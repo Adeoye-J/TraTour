@@ -13,6 +13,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-inline: 3rem;
+  padding-block: 2rem;
 }
 .wishlist-container h2 {
   font-size: 1rem;
@@ -30,7 +32,7 @@
 .wishlist-container .wishlist-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 @media screen and (max-width: 1000px) {
   .wishlist-container .wishlist-content {
@@ -40,5 +42,11 @@
 @media screen and (max-width: 600px) {
   .wishlist-container .wishlist-content {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wishlist-container {
+    padding-inline: 1.5rem;
   }
 }/*# sourceMappingURL=favorites.css.map */

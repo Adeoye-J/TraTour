@@ -16,14 +16,20 @@
 button {
     border: none;
     outline: none;
-    border-radius: 10px;
-    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    /* padding: .7rem 1.5rem; */
+    height: 40px;
+    padding-inline: 1rem;
     background-color: var(--yellow);
     color: var(--white);
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    transition: all ease .7s;
+    transition: all ease .5s;
+}
+
+button:hover {
+    background-color: var(--yellow-hover);
 }
 
 ul {

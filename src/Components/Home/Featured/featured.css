@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-inline: 3rem;
 }
 .featured-container h2 {
   font-size: 1rem;
@@ -29,7 +30,7 @@
 .featured-container .package-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 @media screen and (max-width: 1000px) {
   .featured-container .package-container {
@@ -39,5 +40,11 @@
 @media screen and (max-width: 600px) {
   .featured-container .package-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .featured-container {
+    padding-inline: 1.5rem;
   }
 }/*# sourceMappingURL=featured.css.map */

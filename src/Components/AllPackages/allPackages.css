@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-inline: 3rem;
 }
 .allpackages-container h2 {
   font-size: 1rem;
@@ -27,18 +28,24 @@
   margin-block: 0.7rem;
   font-weight: bold;
 }
-.allpackages-container .packages-container {
+.allpackages-container .package-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 @media screen and (max-width: 1000px) {
-  .allpackages-container .packages-container {
+  .allpackages-container .package-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 600px) {
-  .allpackages-container .packages-container {
+  .allpackages-container .package-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .allpackages-container {
+    padding-inline: 1.5rem;
   }
 }/*# sourceMappingURL=allPackages.css.map */

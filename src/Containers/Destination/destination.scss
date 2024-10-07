@@ -30,12 +30,17 @@
         font-weight: bold;
     }
 
+    p {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: normal;
+    }
+
 
     .destination-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-        
     }
     
     @media screen and (max-width: 1000px) {

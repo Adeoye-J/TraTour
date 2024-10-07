@@ -16,7 +16,9 @@ const Home = () => {
   return (
     <div>
         <Hero title={"Tours and Travels"} />
-        <SearchBar />
+        <div className='search-flow'>
+          <SearchBar />
+        </div>
         <Destination />
         <Featured />
         <Services />

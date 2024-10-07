@@ -26,6 +26,11 @@
   margin-block: 0.7rem;
   font-weight: bold;
 }
+.destination-package-container p {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
 .destination-package-container .destination-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

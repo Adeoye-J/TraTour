@@ -1,18 +1,5 @@
 [
     {
-        "id": 6,
-        "image": "/images/package-6.jpg",
-        "location": "Brazil",
-        "duration": "5 days",
-        "persons": "2 Person",
-        "title": "Rio de Janeiro Carnival",
-        "rating": 4.5,
-        "numberOfRatings": 350,
-        "amount": 1000,
-        "pecks": "VIP access to carnival events",
-        "otherDetails": "Enjoy samba shows and street parades"
-    },
-    {
         "id": 7,
         "image": "/images/package-7.jpg",
         "location": "Kenya",

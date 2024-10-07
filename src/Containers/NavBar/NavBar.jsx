@@ -10,19 +10,19 @@ const Menu = () => {
 
   return(
     <>
-      <li>
+      <li onClick={() => setToggle(false)}>
         <Link to={"/home"} className='menu'>Home</Link>
       </li>
-      <li>
+      <li onClick={() => setToggle(false)}>
         <Link to={"/about"} className='menu'>About</Link>
       </li>
-      <li>
+      <li onClick={() => setToggle(false)}>
         <Link to={"/favorites"} className='menu'>Favorites</Link>
       </li>
-      <li>
+      <li onClick={() => setToggle(false)}>
         <Link to={"/allpackages"} className='menu'>All Packages</Link>
       </li>
-      <li>
+      <li onClick={() => setToggle(false)}>
         <Link to={"/bookings"} className='menu'>Bookings</Link>
       </li>
     </>
@@ -51,7 +51,7 @@ const NavBar = () => {
     <div className={`navbar-container section-spacing ${scroll && "scroll"}`}>
 
       <div className="logo">
-        <h1><Link to={"/home"}>TRA<span>TOUR</span></Link></h1>
+        <h1><Link to={"/home"} style={{textDecoration: "none"}}>TRA<span>TOUR</span></Link></h1>
       </div>
 
       <div className="main-menu">
@@ -81,7 +81,7 @@ const NavBar = () => {
 
       <div className='menu-selection'>
         <div className="main-action-container">
-          <button>Login</button>
+          <button className='login'>Login</button>
           <button>Sign Up</button>
         </div>
 

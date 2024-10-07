@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-inline: 3rem;
 
     h2 {
         font-size: 1rem;
@@ -30,21 +31,27 @@
         font-weight: bold;
     }
 
-    .packages-container {
+    .package-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap: 2rem;
     }
 
     @media screen and (max-width: 1000px) {
-        .packages-container {
+        .package-container {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
     @media screen and (max-width: 600px) {
-        .packages-container {
+        .package-container {
             grid-template-columns: repeat(1, 1fr);
         }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .allpackages-container {
+        padding-inline: 1.5rem;
     }
 }

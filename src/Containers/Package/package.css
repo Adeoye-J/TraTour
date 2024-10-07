@@ -10,8 +10,6 @@
   border: 2px solid var(--yellow);
   border-radius: 10px;
   padding: 1rem;
-  min-width: 270px;
-  max-width: 350px;
 }
 .data-container:hover {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
@@ -77,6 +75,9 @@
 .data-container .data .data-details .action-container {
   display: flex;
   justify-content: space-between;
+}
+.data-container .data .data-details .action-container button {
+  font-size: 0.8rem;
 }
 .data-container .data .data-details .action-container button:hover {
   background-color: var(--yellow-hover);

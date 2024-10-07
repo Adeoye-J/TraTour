@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./hero.css"
+import { Link } from 'react-router-dom'
 
 
 
@@ -14,12 +15,6 @@ const Hero = () => {
     },
     {
       id: 2,
-      image: "/images/package-4.jpg",
-      title: "Tours & Travel",
-      text: "Let's Discover The World Together"
-    },
-    {
-      id: 3,
       image: "/images/carousel-2.jpg",
       title: "Tours & Travel",
       text: "Let's Discover The World Together"
@@ -31,7 +26,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % carousels.length)
-    }, 3000)
+    }, 10000)
 
     return () => clearInterval(interval)
 
@@ -52,6 +47,7 @@ const Hero = () => {
                 <h1>{carousel.title}</h1>
                 <p>{carousel.text}</p>
               </div>
+              <Link to="/allpackages"><button>Explore Packages</button></Link>
             </div>
           ))
         }

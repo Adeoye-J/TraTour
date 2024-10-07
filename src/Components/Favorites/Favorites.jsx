@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import { TourContext } from '../../TourContext/TourContext'
 import Package from '../../Containers/Package/Package'
-import Hero from '../Home/Hero/Hero'
+import HeroSec from '../../Containers/HeroSec/HeroSec'
+import favorite_image from "/images/favori.jpg"
 import "./favorites.css"
 
 const Favorites = () => {
@@ -10,8 +11,8 @@ const Favorites = () => {
 
   return (
     <>
-        <Hero title={"Explore Your Favorites"} />
-        <div className='wishlist-container section-spacing'>
+        <HeroSec section={"Favorites"} image={favorite_image} />
+        <div className='wishlist-container'>
             
             <h2>Favorites</h2>
             <h1>Explore Favorites</h1>
@@ -25,8 +26,6 @@ const Favorites = () => {
                     ) : (
                         <h1>No Favorites here. Add to view.</h1>
                     )
-                
-            
             }
         </div>
     </>

@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import "./bookings.css"
 import {TourContext} from "../../TourContext/TourContext"
-import Hero from '../Home/Hero/Hero'
+import HeroSec from '../../Containers/HeroSec/HeroSec'
+import bookings_image from "/images/placetour.jpg"
 
 const Bookings = () => {
 
@@ -14,7 +15,7 @@ const Bookings = () => {
 
   return (
     <>
-      <Hero />
+      <HeroSec section={"Bookings"} image={bookings_image} />
       <div className='bookings-container section-spacing'>
         <h2>Bookings</h2>
         <h1>Explore Bookings</h1>
@@ -38,7 +39,7 @@ const Bookings = () => {
           ))} 
         </div>
           :
-        <h1>No Bookings Available for now.</h1>
+        <h1>You Have No Bookings!</h1>
         }
 
       </div>

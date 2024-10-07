@@ -7,24 +7,21 @@ const Destination = () => {
 
   const {allData, destination} = useContext(TourContext)
 
+  const filteredDestination = allData.filter((data) => data.location.toLowerCase().includes(destination.toLowerCase()) || data.title.toLowerCase().includes(destination.toLowerCase()))
+
   return (
     <div className="destination-package-container section-spacing">
       {destination && (<>
       <h2>SEARCH RESULT</h2>
       <h1>Result for {destination}</h1>
-      <div className='destination-container section-spacing'>
-        {
-          allData.map((item) => (destination === item.location ? 
-            <Package data={item} />
-            : "") )
+        { filteredDestination.length ?
+        <div className='destination-container section-spacing'>
+            filteredDestination.map((item) => (
+              <Package data={item} />
+            ))
+        </div>
+        : <p>Not Available At The Moment!</p>
         }
-
-          {/* {
-              allData.map((data) => (
-                  <Package data={data} key={data.id} />
-              ))
-          } */}
-      </div>
       </>)
       }
     </div>

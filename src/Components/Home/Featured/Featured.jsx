@@ -8,31 +8,8 @@ const Featured = () => {
 
   const {featuredData} = useContext(TourContext)
 
-    // const [packages, setPackages] = useState([])
-    // const [loading, setLoading] = useState(false)
-    // const [error, setError] = useState(null)
-
-    // const fetchPackages = async () => {
-    //     try {
-    //         setLoading(true)
-    //         const response = await fetch(getUrl)
-
-    //         const packageData = await response.json()
-    //         console.log(packageData)
-    //         setPackages(packageData)
-    //         setLoading(false)
-    //     } catch (e) {
-    //         setError(e.message)
-    //         setLoading(false)
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     fetchPackages()
-    // }, [])
-
   return (
-    <div className='featured-container section-spacing'>
+    <div className='featured-container'>
         <h2>PACKAGES</h2>
         <h1>Featured Tours & Travels Packages</h1>
         <div className="package-container">

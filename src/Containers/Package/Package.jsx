@@ -64,7 +64,6 @@ const Package = ({data}) => {
             <div className="wishlist" onClick={() => handleWishlist(data)}>
                 <FaStar className={wishlist.find((value) => value.id === data.id) && "select"} />
             </div>
-            
         </div>
     </div>
   )
