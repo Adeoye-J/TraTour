@@ -10,15 +10,15 @@ const Destination = () => {
   const filteredDestination = allData.filter((data) => data.location.toLowerCase().includes(destination.toLowerCase()) || data.title.toLowerCase().includes(destination.toLowerCase()))
 
   return (
-    <div className="destination-package-container section-spacing">
+    <div className="destination-container section-spacing">
       {destination && (<>
       <h2>SEARCH RESULT</h2>
       <h1>Result for {destination}</h1>
         { filteredDestination.length ?
-        <div className='destination-container section-spacing'>
-            filteredDestination.map((item) => (
+        <div className='destination-content'>
+            {filteredDestination.map((item) => (
               <Package data={item} />
-            ))
+            ))}
         </div>
         : <p>Not Available At The Moment!</p>
         }

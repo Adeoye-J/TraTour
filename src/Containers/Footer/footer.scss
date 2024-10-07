@@ -7,10 +7,8 @@
 }
 
 .footer-container {
-    width: 100%;
-    min-height: 70vh;
-    margin: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--yellow);
@@ -18,12 +16,12 @@
     
     
     .footer-content {
-        margin-block: 3rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-        align-items: flex-start;
-        justify-content: flex-start;
+        width: 90%;
+        margin-block: 2rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
         
 
@@ -31,9 +29,13 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            width: 250px;
+            border: 2px solid blue;
+            padding: 1rem;
+            border-radius: 5px;
 
             h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
                 text-transform: uppercase;
 
                 span {
@@ -44,11 +46,13 @@
             p {
                 font-size: 1rem;
                 line-height: 1.2rem;
+                text-align: left;
             }
 
             .social-links {
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
                 gap: 1rem;
 
                 h2 {
@@ -93,12 +97,11 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            // align-items: center;
 
             h2 {
                 text-transform: uppercase;
-                font-size: 1.2rem;
-                // text-align: center;
+                font-size: 1.4rem;
+                color: blue;
             }
 
             .service {
@@ -109,15 +112,21 @@
                 
                 
                 li {
+                    font-weight: 600;
                     display: flex;
                     align-items: center;
                     gap: 1rem;
                     font-size: 1rem;
                     cursor: pointer;
+                    transition: all ease .5s;
 
                     &:hover {
-                        padding-bottom: .3rem;
-                        border-bottom: 2px solid var(--white);
+                        transform: translateX(5px);
+                        color: blue;
+                    }
+
+                    span {
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -127,12 +136,11 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            // align-items: center;
 
             h2 {
                 text-transform: uppercase;
-                font-size: 1.2rem;
-                // text-align: center;
+                font-size: 1.4rem;
+                color: blue;
             }
 
             .service {
@@ -142,16 +150,21 @@
                 gap: .5rem;
                 
                 li {
+                    font-weight: 600;
                     display: flex;
                     align-items: center;
                     gap: 1rem;
                     font-size: 1rem;
                     cursor: pointer;
-                    transition: all ease .7s;
+                    transition: all ease .3s;
 
                     &:hover {
-                        padding-bottom: .3rem;
-                        border-bottom: 2px solid var(--white);
+                        transform: translateX(5px);
+                        color: blue;
+                    }
+
+                    span {
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -160,7 +173,12 @@
         .contact-us {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 2rem;
+
+            h2 {
+                font-size: 1.4rem;
+                color: blue;
+            }
 
             .contact-details {
                 display: flex;
@@ -171,7 +189,7 @@
                     display: flex;
                     align-items: center;
                     gap: 1rem;
-                    font-size: .8rem;
+                    font-size: 1rem;
                 }
             }
 
@@ -180,30 +198,28 @@
                 flex-direction: column;
                 gap: .5rem;
 
-                .input-button {
+                h2 {
+                    font-size: 1.4rem;
+                    color: blue;
+                }
+
+                .input-container {
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     gap: 1rem;
 
                     input {
                         width: 100%;
                         height: 40px;
-                        padding-left: 10px;
-                        padding-right: 5px;
-                        font-size: 1rem;
+                        padding: 10px;
                         outline: none;
-                        border-radius: 10px;
-                        border: none;
+                        border-radius: 5px;
+                        border: 1px solid blue;
                     }
 
                     button {
-                        height: 40px;
-                        padding-inline: 1rem;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        text-wrap: nowrap;
-                        border: 2px solid var(--white);
+                        border: 2px solid blue;
 
                         &:hover {
                             color: var(--yellow);
@@ -212,41 +228,13 @@
                     }
                 }
             }
-        }
-    }
 
-    @media screen and (max-width: 900px) {
-        .footer-content {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-
-    @media screen and (max-width: 500px) {
-        .footer-content {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 3rem;
-
-            .footer-info {
-
-                h1 {
-                    text-align: center;
-                }
-
-                p {
-                    text-align: center;
+            @media screen and (max-width: 600px) {
+                .newsletter {
+                    align-items: center;
                 }
             }
-
-            .footer-services {
-                align-items: center;
-            }
-
-            .footer-useful-links {
-                align-items: center;
-            }
         }
     }
-
 }
 

@@ -39,7 +39,12 @@
 }
 .navbar-container .menu-selection .main-action-container .login {
   background: none;
-  color: var(--gray950);
+  color: var(--yellow);
+  transition: all ease-in-out 0.5s;
+}
+.navbar-container .menu-selection .main-action-container .login:hover {
+  background: transparent;
+  color: var(--yellow);
 }
 .navbar-container .menu-selection .main-action-container button {
   cursor: pointer;

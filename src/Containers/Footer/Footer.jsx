@@ -32,26 +32,26 @@ const Footer = () => {
         <div className="footer-services">
           <h2>Our Services</h2>
           <ul className="service">
-            <li><span><FaArrowRight size={10} color='blue' /></span> About</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Destination</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Services</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Packages</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Guides</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Testimonial</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Blog</li>
+            <li><FaArrowRight size={10} color='blue' /> <span>About</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Destination</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Services</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Packages</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Guides</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Testimonial</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Blog</span></li>
           </ul>
         </div>
 
         <div className="footer-useful-links">
           <h2>Useful Links</h2>
           <ul className="service">
-            <li><span><FaArrowRight size={10} color='blue' /></span> About</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Destination</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Services</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Packages</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Guides</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Testimonial</li>
-            <li><span><FaArrowRight size={10} color='blue' /></span> Blog</li>
+            <li><FaArrowRight size={10} color='blue' /> <span>About</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Destination</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Services</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Packages</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Guides</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Testimonial</span></li>
+            <li><FaArrowRight size={10} color='blue' /> <span>Blog</span></li>
           </ul>
         </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
           <div className="newsletter">
             <h2>Newsletter</h2>
-            <div className="input-button">
+            <div className="input-container">
               <input type="email" placeholder='Your Email' />
               <button>Sign Up</button>
             </div>
@@ -72,6 +72,8 @@ const Footer = () => {
         </div>
 
       </div>
+
+      <p>All Rights Reserved - <span>Jeremiah Codes//</span></p>
     </div>
   )
 }

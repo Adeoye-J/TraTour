@@ -6,43 +6,50 @@
   --gray950: hsl(0, 0%, 7%);
 }
 
-.destination-package-container {
+.destination-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-inline: 3rem;
 }
-.destination-package-container h2 {
+.destination-container h2 {
   font-size: 1rem;
   text-align: center;
   letter-spacing: 5px;
   color: var(--yellow);
   font-weight: bold;
 }
-.destination-package-container h1 {
+.destination-container h1 {
   font-size: 1.9rem;
   text-align: center;
   margin-block: 0.7rem;
   font-weight: bold;
 }
-.destination-package-container p {
+.destination-container p {
   text-align: center;
   font-size: 1.8rem;
   font-weight: normal;
 }
-.destination-package-container .destination-container {
+.destination-container .destination-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 @media screen and (max-width: 1000px) {
-  .destination-package-container .destination-container {
+  .destination-container .destination-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 600px) {
-  .destination-package-container .destination-container {
+  .destination-container .destination-content {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .destination-container {
+    padding-inline: 1.5rem;
   }
 }/*# sourceMappingURL=destination.css.map */

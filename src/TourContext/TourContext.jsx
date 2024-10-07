@@ -10,6 +10,8 @@ export const TourProvider = ({children}) => {
 
   const [wishlist, setWishlist] = useState([])
 
+  const [authType, setAuthType] = useState("login")
+
   const [id, setId] = useState(0)
 
   const [userDetails, setUserDetails] = useState({
@@ -21,7 +23,7 @@ export const TourProvider = ({children}) => {
   const [bookings, setBookings] = useState([]);
 
   return (
-    <TourContext.Provider value={{destination, setDestination, allData, featuredData, wishlist, setWishlist, id, setId, userDetails, setUserDetails, bookings, setBookings}}>
+    <TourContext.Provider value={{destination, setDestination, allData, featuredData, wishlist, setWishlist, id, setId, userDetails, setUserDetails, bookings, setBookings, authType, setAuthType}}>
         {children}
     </TourContext.Provider>
   )

@@ -19,7 +19,9 @@ const Home = () => {
         <div className='search-flow'>
           <SearchBar />
         </div>
-        <Destination />
+        <div className="destination">
+          <Destination />
+        </div>
         <Featured />
         <Services />
         <Testimonials />

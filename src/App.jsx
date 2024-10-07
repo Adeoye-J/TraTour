@@ -13,14 +13,15 @@ import Bookings from './Components/Bookings/Bookings'
 import AllPackages from './Components/AllPackages/AllPackages'
 import PackageDetails from './Containers/PackageDetails/PackageDetails'
 import Home from "./Components/Home/Home"
+import Authentication from './Components/Authentication/Authentication'
 
 
 function App() {
 
   return (
     <>
-      <NavBar />
       <TourProvider>
+      <NavBar />
         <Routes>
           <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
@@ -30,9 +31,10 @@ function App() {
           <Route path="/packages/:id" element={<PackageDetails/>} />
           <Route path="/bookingform" element={<BookingForm />} />
           <Route path="/bookings" element={<Bookings />} />
+          <Route path='auth' element={<Authentication />} />
         </Routes>
-      </TourProvider>
       <Footer />
+      </TourProvider>
     </>
   )
 }

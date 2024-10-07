@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import {Link} from "react-router-dom"
 import { CgMenuGridO } from "react-icons/cg";
 import { MdCloseFullscreen } from "react-icons/md";
+import { TourContext } from '../../TourContext/TourContext';
 
 import "./navbar.css"
-// import { LiaAnkhSolid } from 'react-icons/lia';
 
-const Menu = () => {
+const Menu = ({setToggle}) => {
 
   return(
     <>
@@ -32,20 +32,23 @@ const Menu = () => {
 const NavBar = () => {
 
   const [toggle, setToggle] = useState(false)
-
+  
   const [scroll, setScroll] = useState(false)
-
+  
+  
   const handleScroll = () => {
     window.scrollY > 50 ? setScroll(true) : setScroll(false)
   }
-
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
-
+    
     return(() => {
       window.removeEventListener("scroll", handleScroll)
     })
   }, [])
+  
+  const {setAuthType} = useContext(TourContext)
 
   return (
     <div className={`navbar-container section-spacing ${scroll && "scroll"}`}>
@@ -64,12 +67,12 @@ const NavBar = () => {
         toggle &&
         <div className="menu-container">
           <ul>
-            <Menu />
+            <Menu setToggle={setToggle} />
           </ul>
 
           <div className="action-container">
-            <button>Login</button>
-            <button>Sign Up</button>
+            <Link to="/auth"><button onClick={() => {setAuthType("login"); setToggle(false)}}>Login</button></Link>
+            <Link to="/auth"><button onClick={() => {setAuthType("signup"); setToggle(false)}}>Signup</button></Link>
           </div>
 
           <div className="close-menu">
@@ -81,8 +84,8 @@ const NavBar = () => {
 
       <div className='menu-selection'>
         <div className="main-action-container">
-          <button className='login'>Login</button>
-          <button>Sign Up</button>
+          <Link to="/auth"><button className='login' onClick={() => setAuthType("login")}>Login</button></Link>
+          <Link to="/auth"><button onClick={() => setAuthType("signup")}>Signup</button></Link>
         </div>
 
         <div className="menu-toggle">

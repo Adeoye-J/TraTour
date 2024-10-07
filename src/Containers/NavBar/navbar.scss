@@ -30,8 +30,6 @@
             display: inline-block;
             color: var(--yellow);
         }
-
-
     }
 
     .menu-selection {
@@ -44,7 +42,13 @@
 
             .login {
                 background: none;
-                color: var(--gray950);
+                color: var(--yellow);
+                transition: all ease-in-out .5s;
+
+                &:hover {
+                    background: transparent;
+                    color:  var(--yellow);
+                }
             }
 
             button {
