@@ -21,6 +21,19 @@
   color: var(--yellow);
   font-weight: bold;
 }
+.bookingform-container .booked-package {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bookingform-container .booked-package .image {
+  width: 80%;
+}
+.bookingform-container .booked-package .image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .bookingform-container h1 {
   font-size: 1.9rem;
   text-align: center;
@@ -49,4 +62,7 @@
   height: 50px;
   padding: 1rem;
   font-size: 1.2rem;
+}
+.bookingform-container .bookingform-content button {
+  padding-inline: 1.5rem;
 }/*# sourceMappingURL=bookingForm.css.map */

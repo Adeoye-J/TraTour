@@ -89,7 +89,10 @@
 
                 }
                 
-                
+                button {
+                    padding-inline: 1.5rem;
+                    height: 45px;
+                }
             }
         }
 
@@ -104,19 +107,6 @@
                     }
                 }
             }
-        }
-    }
-
-
-    // @media screen and (max-width: 1000px) {
-    //     .packages-container {
-    //         grid-template-columns: repeat(2, 1fr);
-    //     }
-    // }
-
-    @media screen and (max-width: 600px) {
-        .packages-container {
-            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

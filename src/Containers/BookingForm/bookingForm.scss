@@ -23,6 +23,21 @@
         font-weight: bold;
     }
 
+    .booked-package {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .image {
+            width: 80%;
+            
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
     h1 {
         font-size: 1.9rem;
         text-align: center;
@@ -55,6 +70,10 @@
                 padding: 1rem;
                 font-size: 1.2rem;
             }
+        }
+
+        button {
+            padding-inline: 1.5rem;
         }
     }
 
