@@ -37,10 +37,10 @@
   opacity: 0;
 }
 .hero-container .hero-content .carousel .carousel-details {
-  width: 70%;
+  width: 80%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4431372549);
-  padding-block: 2rem;
+  padding: 2rem;
   animation: mainMenuAnim 1s ease 0s 1 normal forwards;
 }
 .hero-container .hero-content .carousel .carousel-details h1 {
@@ -52,7 +52,7 @@
 }
 @media screen and (max-width: 900px) {
   .hero-container .hero-content .carousel .carousel-details h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .hero-container .hero-content .carousel .carousel-details p {
     font-size: 1.6rem;
@@ -60,7 +60,7 @@
 }
 @media screen and (max-width: 500px) {
   .hero-container .hero-content .carousel .carousel-details h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .hero-container .hero-content .carousel .carousel-details p {
     font-size: 1.1rem;
