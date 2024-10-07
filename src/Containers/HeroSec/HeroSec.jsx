@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./heroSec.css"
 
-const HeroSec = ({section, image}) => {
+const HeroSec = ({section, image, page}) => {
 
     return (
         <div className='herosec-container' style={{backgroundImage:`url(${image})`}}>
@@ -11,7 +11,7 @@ const HeroSec = ({section, image}) => {
                 <p>
                     <Link to="/home" style={{textDecoration:"underline", color:"#ff0"}}><p>Home</p></Link>
                     <span>/</span>
-                    <p>{section}</p>
+                    <p>{page}</p>
                 </p>
             </div>
         </div>

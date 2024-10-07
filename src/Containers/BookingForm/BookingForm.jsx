@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import "./bookingForm.css"
 import { TourContext } from '../../TourContext/TourContext';
-import Hero from "../../Components/Home/Hero/Hero"
+import HeroSec from '../HeroSec/HeroSec';
 
 const BookingForm = () => {
   const {userDetails, setUserDetails, bookings, setBookings, id, allData} = useContext(TourContext);
@@ -24,7 +24,7 @@ const BookingForm = () => {
 
   return (
     <>
-      <Hero title="Booking Form" />
+      <HeroSec page="book details" section="Booking Details" />
       <div className="bookingform-container">
         <h2>Booking Form</h2>
         {
@@ -48,6 +48,7 @@ const BookingForm = () => {
               name="name"
               value={userDetails.name}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -59,6 +60,7 @@ const BookingForm = () => {
               name="email"
               value={userDetails.email}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -70,6 +72,7 @@ const BookingForm = () => {
               name="phone"
               value={userDetails.phone}
               onChange={handleChange}
+              required
             />
           </div>
           <button type="submit">Make Bookings</button>

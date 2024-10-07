@@ -15,7 +15,7 @@ const Bookings = () => {
 
   return (
     <>
-      <HeroSec section={"Bookings"} image={bookings_image} />
+      <HeroSec section={"Bookings"} page="Bookings" image={bookings_image} />
       <div className='bookings-container section-spacing'>
         <h2>Bookings</h2>
         <h1>Explore Bookings</h1>

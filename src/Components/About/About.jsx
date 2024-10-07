@@ -6,7 +6,7 @@ import HeroSec from '../../Containers/HeroSec/HeroSec'
 const About = () => {
   return (
     <>
-      <HeroSec section={"About"} image={about_image}/>
+      <HeroSec section={"About"} page="About Us" image={about_image}/>
       <div className='about-container'>
         <h1>About Us</h1>
       </div>

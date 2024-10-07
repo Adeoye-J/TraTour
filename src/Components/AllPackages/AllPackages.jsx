@@ -13,7 +13,7 @@ const AllPackages = () => {
 
   return (
     <>
-        <HeroSec section={"All Packages"} image={packages_image} />
+        <HeroSec section={"All Packages"} page="All Packages" image={packages_image} />
         <SearchBar />
         <Destination />
         <div className='allpackages-container'>

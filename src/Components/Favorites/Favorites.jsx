@@ -11,7 +11,7 @@ const Favorites = () => {
 
   return (
     <>
-        <HeroSec section={"Favorites"} image={favorite_image} />
+        <HeroSec section={"Favorites"} page="Favorites" image={favorite_image} />
         <div className='wishlist-container'>
             
             <h2>Favorites</h2>
