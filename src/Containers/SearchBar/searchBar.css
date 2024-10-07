@@ -20,7 +20,7 @@
 .search-bar .search-container .search-content input {
   display: block;
   width: 100%;
-  min-width: 300px;
+  min-width: 270px;
   padding: 0 1rem;
   font-size: 1rem;
   color: var(--gray950);
@@ -36,8 +36,8 @@
 .search-bar .search-container .search-content input::placeholder {
   color: var(--gray500);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
   .search-bar .search-container {
-    flex-direction: column;
+    width: 100%;
   }
 }/*# sourceMappingURL=searchBar.css.map */
